@@ -1,5 +1,6 @@
 /*header */
 
+/* логотип в шапці сайта */
 .card-logo{
     font-family: 'Raleway';
 font-weight: 700;
@@ -10,6 +11,7 @@ color: #000000;
 text-decoration: none;
 }
 
+/* посилання в шапці сайта */
 .card-headerlink{
     font-family: 'Roboto';
 font-weight: 500;
@@ -22,11 +24,12 @@ text-decoration: none;
 
 /* main */
 
-.card-main{
+.card-body{
     font-family: 'Roboto';
 }
 
-.card-hero{
+/* секція-герой */
+.hero-section{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -37,7 +40,7 @@ color: #FFFFFF;
 background-color: #2F303A;
 }
 
-.card-button{
+.hero-button{
 font-weight: 700;
 font-size: 16px;
 line-height: 1.875;
@@ -49,7 +52,8 @@ color: #FFFFFF;
 background-color: #2196F3;
 }
 
-.card-name{
+/* секція "Чому ми?" */
+.features-name{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -58,7 +62,7 @@ text-transform: uppercase;
 color: #212121;
 }
 
-.card-tittle{
+.features-tittle{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -67,7 +71,7 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.card-description{
+.features-description{
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -75,7 +79,27 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.card-workername{
+/* Наша робота */
+.work-tittle{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+
+/* секція "Команда" */
+.team-tittle{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+
+.workername{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
@@ -83,7 +107,7 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.card-profession{
+.worker-profession{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
@@ -93,6 +117,7 @@ color: #757575;
 
 /* footer */
 
+/* логотип в підвалі сайта */
 .card-footerlogo{
     font-family: 'Raleway';
 font-weight: 700;
@@ -104,7 +129,8 @@ background-color: #2F303A;
 text-decoration: none;
 }
 
-.card-address{
+/* адреса */
+.address{
 font-family: 'Roboto';
 font-weight: 400;
 font-size: 14px;
@@ -114,6 +140,7 @@ color: #FFFFFF;
 background-color: #2F303A;   
 }
 
+/* посилання в підвалі сайта */
 .footerlink{
     font-family: 'Roboto';
 font-weight: 400;
