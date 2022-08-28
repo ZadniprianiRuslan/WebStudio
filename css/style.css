@@ -11,6 +11,10 @@ color: #000000;
 text-decoration: none;
 }
 
+.color-text{
+    color: #2196F3;
+}
+
 /* посилання в шапці сайта */
 .card-headerlink{
     font-family: 'Roboto';
@@ -18,8 +22,12 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #2196F3;
+color: #212121;
 text-decoration: none;
+}
+
+.card-headerlink:hover{
+    color: #2196F3;
 }
 
 /* main */
