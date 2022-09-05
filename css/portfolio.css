@@ -1,3 +1,4 @@
+/* Portfolio */
 
 h1,
 h2,
@@ -115,173 +116,77 @@ header .container {
 
 /* main */
 
-.card-body {
+/* buttons */
+
+.portfolio-buttons .container{
+    padding-top: 95px;
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+.buttons-item {
+  margin: 8px;
+}
+
+.portfolio-button {
   font-family: 'Roboto';
-}
-
-/* секція-герой */
-.hero-section {
-  outline: 2px solid red;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero-tittle {
-  outline: solid yellow;
-}
-
-.hero-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-top: 30px;
-  
-}
-
-/* секція "Чому ми?" */
-
-.why-we {
-  outline: 2px solid red;
-}
-
-.features-list {
-  display: flex;
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-
-.features-item {
-  width: 270px;
-  margin-right: 30px;
-}
-
-.features-name {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.features-tittle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.features-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* Наша робота */
-
-.work-section {
-  outline: 2px solid red;
-}
-
-.work-section .container {
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-
-.work-tittle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.work-list {
-  display: flex;
-  margin-top: 50px;
-}
-
-.work-item {
-  width: 370px;
-  margin-left: 30px;
-}
-
-.work-item:first-child{
-  margin-left: 0px;
-}
-
-/* секція "Команда" */
-
-.team-section {
-  outline: 2px solid red;
-}
-
-.team-section .container {
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-
-.team-tittle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.team-list {
-  display: flex;
-  margin-top: 50px;
-}
-
-.team-item {
-  width: 270px;
-  margin-left: 30px;
-}
-
-.team-item:first-child{
-  margin-left: 0px;
-}
-
-.workername {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 26px;
+  text-align: center;
   letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.portfolio-button:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+/* images */
+
+.portfolio-images {
+  outline: 2px solid red;
+}
+
+.images-list {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding-top: 35px;
+  padding-bottom: 95px;
+  margin: -15px;
+}
+
+.images-item {
+  width: 370px;
+  margin: 15px;
+}
+
+.images-item:first-child{
+    margin-left: 0px;
+}
+
+.image-name {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
   color: #212121;
 }
 
-.worker-profession {
+.image-description {
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
 }
-
-/* footer */
 
 .footer {
   outline: 2px solid red;
