@@ -41,7 +41,6 @@ header .container {
 }
 
 .container {
-  outline: 2px solid red;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -118,8 +117,10 @@ header .container {
 
 /* buttons */
 
-.portfolio-buttons .container{
-    padding-top: 95px;
+.portfolio-buttons .container {
+  padding-top: 95px;
+  outline: 2px solid yellow;
+  margin-bottom: 15px;
 }
 
 .buttons-list {
@@ -141,6 +142,7 @@ header .container {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
+  border: none;
 }
 
 .portfolio-button:hover {
@@ -150,7 +152,8 @@ header .container {
 /* images */
 
 .portfolio-images {
-  outline: 2px solid red;
+  outline: 2px solid purple;
+  height: 1375px;
 }
 
 .images-list {
@@ -166,8 +169,8 @@ header .container {
   margin: 15px;
 }
 
-.images-item:first-child{
-    margin-left: 0px;
+.images-item:first-child {
+  margin-left: 0px;
 }
 
 .image-name {
@@ -187,6 +190,8 @@ header .container {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+/* footer */
 
 .footer {
   outline: 2px solid red;
@@ -219,6 +224,8 @@ header .container {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2f303a;
+  margin-top: 20px;
+  font-style: normal;
 }
 
 /* посилання в підвалі сайта */
