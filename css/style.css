@@ -73,7 +73,7 @@ header .container {
   padding-bottom: 30px;
 }
 
-.nav-item:first-child{
+.nav-item:first-child {
   margin-left: auto;
 }
 
@@ -97,7 +97,7 @@ header .container {
   display: flex;
 }
 
-.contact-item:first-child{
+.contact-item:first-child {
   margin-left: auto;
   margin-right: 50px;
 }
@@ -116,6 +116,24 @@ header .container {
 
 .contact-link:hover {
   color: #2196f3;
+}
+
+.envelope::before{
+  background-image: url("../images/envelope.png");
+  display: block;
+  content: "";
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.smartphone::before{
+  background-image: url("../images/smartphone.png");
+  display: block;
+  content: "";
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* main */
@@ -137,7 +155,9 @@ header .container {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/herophoto.png');
 }
 
 .hero-tittle {
@@ -154,7 +174,7 @@ header .container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
-  padding:10px 24px;
+  padding: 10px 24px;
   border: none;
 }
 
@@ -175,7 +195,36 @@ header .container {
   margin-right: 30px;
 }
 
-.features-item:last-child{
+.features-item::before{
+  display: block;
+  content: "";
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+}
+
+.antena1::before{
+  background-image: url("../images/antenna1.png");
+}
+
+.clock1::before{
+  background-image: url("../images/clock1.png");
+}
+
+.diagram1::before{
+  background-image: url("../images/diagram1.png");
+}
+
+.astronaut1::before{
+  background-image: url("../images/astronaut1.png");
+}
+
+.features-item:last-child {
   margin-right: 0px;
 }
 
