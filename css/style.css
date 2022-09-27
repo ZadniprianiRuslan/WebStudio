@@ -97,6 +97,11 @@ header .container {
   display: flex;
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
 .contact-item:first-child {
   margin-left: auto;
   margin-right: 50px;
@@ -118,22 +123,14 @@ header .container {
   color: #2196f3;
 }
 
-.envelope::before{
-  background-image: url("../images/envelope.png");
-  display: block;
-  content: "";
-  height: 12px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.envelope {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.smartphone::before{
-  background-image: url("../images/smartphone.png");
-  display: block;
-  content: "";
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.smartphone {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* main */
@@ -157,7 +154,11 @@ header .container {
   padding-bottom: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../images/herophoto.png');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/Img.jpg');
 }
 
 .hero-tittle {
@@ -195,9 +196,9 @@ header .container {
   margin-right: 30px;
 }
 
-.features-item::before{
+.features-item::before {
   display: block;
-  content: "";
+  content: '';
   height: 120px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -205,23 +206,27 @@ header .container {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
-.antena1::before{
-  background-image: url("../images/antenna1.png");
+.antena1::before {
+  background-image: url('../images/antenna1.png');
+  background-size: 70px;
 }
 
-.clock1::before{
-  background-image: url("../images/clock1.png");
+.clock1::before {
+  background-image: url('../images/clock1.png');
+  background-size: 70px;
 }
 
-.diagram1::before{
-  background-image: url("../images/diagram1.png");
+.diagram1::before {
+  background-image: url('../images/diagram1.png');
+  background-size: 70px;
 }
 
-.astronaut1::before{
-  background-image: url("../images/astronaut1.png");
+.astronaut1::before {
+  background-image: url('../images/astronaut1.png');
+  background-size: 70px;
 }
 
 .features-item:last-child {
@@ -293,6 +298,7 @@ header .container {
 
 .team-section {
   outline: 2px solid red;
+  background-color: #f5f4fa;
 }
 
 .team-section .container {
@@ -321,6 +327,7 @@ header .container {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .team-item:first-child {
@@ -344,6 +351,79 @@ header .container {
   letter-spacing: 0.03em;
   color: #757575;
   padding-bottom: 30px;
+}
+
+.team-icons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-icon {
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+/* clients */
+
+.clients-section .container{
+  padding-top: 90px;
+  padding-bottom: 94px;
+}
+
+.clients-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.clients-list{
+  display: flex;
+  justify-content: center;
+}
+
+.client-icon{
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.client-icon:nth-child(1){
+  padding: 20px 63px;
+}
+
+.client-icon:nth-child(2){
+  padding: 19px 65px;
+}
+
+.client-icon:nth-child(3){
+  padding: 24px 65px;
+}
+
+.client-icon:nth-child(4){
+  padding: 24px 45px;
+}
+
+.client-icon:nth-child(5){
+  padding: 22px 55px;
+}
+
+.client-icon:nth-child(6){
+  padding: 22px 41px;
+}
+
+.client-icon:last-child{
+  margin-right: 0px;
+}
+
+.client-icon:hover{
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 /* footer */
@@ -380,6 +460,7 @@ header .container {
   color: #ffffff;
   background-color: #2f303a;
   padding-top: 20px;
+  margin-bottom: 9px;
   font-style: normal;
 }
 
@@ -393,4 +474,28 @@ header .container {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   display: flex;
+  margin-bottom: 9px;
+}
+
+.join{
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.footer-icons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icon {
+  margin-left: 10px;
+  border-radius: 50%;
+  fill: #FFFFFF;
 }
