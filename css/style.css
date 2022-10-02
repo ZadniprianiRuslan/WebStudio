@@ -40,7 +40,6 @@ header .container {
 }
 
 .container {
-  outline: 2px solid red;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -117,6 +116,9 @@ header .container {
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: #757575;
+  display: flex;
+  align-items: center;
 }
 
 .contact-link:hover {
@@ -141,7 +143,6 @@ header .container {
 
 /* секція-герой */
 .hero-section {
-  outline: 2px solid red;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -163,6 +164,13 @@ header .container {
 
 .hero-tittle {
   outline: solid yellow;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+padding-right: 350px;
+padding-left: 350px;
 }
 
 .hero-button {
@@ -286,12 +294,29 @@ header .container {
 }
 
 .work-item {
+  position: relative;
   width: 370px;
   margin-left: 30px;
 }
 
 .work-item:first-child {
   margin-left: 0px;
+}
+
+.work-text{
+position: absolute;
+bottom: 0px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+padding-top: 27px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: rgba( 47, 48, 58, 0.8);
+width: 370px;
+height: 70px;
 }
 
 /* секція "Команда" */
@@ -328,6 +353,7 @@ header .container {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  background-color: #FFFFFF;
 }
 
 .team-item:first-child {

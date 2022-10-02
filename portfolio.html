@@ -28,7 +28,7 @@
           >
           <ul class="links">
             <li class="nav-item">
-              <a class="card-headerlink" href="/">Студія</a>
+              <a class="card-headerlink" href="/index.html">Студія</a>
             </li>
             <li class="nav-item">
               <a class="card-headerlink" href="./portfolio.html">Портфоліо</a>
@@ -39,15 +39,22 @@
           </ul>
         </nav>
         <ul class="contact-list">
-          <li class="contact-item">
+          <li class="contact-item envelope">
             <a class="contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+              >
+              <svg class="envelope" width="16px" height="12px">
+                <use href="./images/symbol-defs3.svg#icon-envelope"></use>
+                </svg>
+              info@devstudio.com</a>
+            
           </li>
-          <li class="contact-item">
+          <li class="contact-item smartphone">
             <a class="contact-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+              >
+              <svg class="smartphone" width="10px" height="16px">
+                <use href="./images/symbol-defs3.svg#icon-smartphone"></use>
+                </svg>
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -82,77 +89,122 @@
           <ul class="images-list">
             <li class="images-item">
               <img src="./images/kryak.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Технокрик</h2>
               <p class="image-description">Веб-сайт</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/poster.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Постер New Orlean vs Golden Star</h2>
               <p class="image-description">Дизайн</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/seafood.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Ресторан Seafood</h2>
               <p class="image-description">Застосунок</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/prime.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Проект Prime</h2>
               <p class="image-description">Маркетинг</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/boxes.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Проект Boxes</h2>
               <p class="image-description">Застосунок</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/monitor.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Inspiration has no Borders</h2>
               <p class="image-description">Веб-сайт</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/limited.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Видавництво Limited Edition</h2>
               <p class="image-description">Дизайн</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/lab.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Проект LAB</h2>
               <p class="image-description">Маркетинг</p>
+              </div>
             </li>
 
             <li class="images-item">
               <img src="./images/buisness.png" alt="image" />
+              <div class="image-text">
               <h2 class="image-name">Growing Business</h2>
               <p class="image-description">Застосунок</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <!--footer-->
-    <footer class="footer">
-      <div class="container">
-        <a class="card-footerlogo" href="/"
-          ><span class="color-text">Web</span>Studio</a
-        >
-        <address>
-          <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-        </address>
-        <a class="footerlink" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
+ <!--footer-->
+ <footer class="footer">
+  <div class="container">
+    <div class="footer-nav-container1">
+    <a class="card-footerlogo" href="/"
+      ><span class="color-text">Web</span>Studio</a
+    >
+    <address>
+      <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+    </address>
+    <a class="footerlink" href="mailto:info@devstudio.com"
+      >info@devstudio.com</a
+    >
+    <a class="footerlink" href="tel:+380961111111">+38 096 111 11 11</a>
+    </div>
 
-        <a class="footerlink" href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
-    </footer>
+    <div class="footer-nav-container2">
+    <p class="join">Приєднуйтесь</p>
+    <ul class="footer-icons-list">
+      <li class="footer-icon">
+        <svg width="20px" height="20px">
+          <use href="./images/symbol-defs.svg#icon-instagram"></use>
+        </svg>
+      </li>
+      <li class="footer-icon">
+        <svg width="20px" height="20px">
+          <use href="./images/symbol-defs.svg#icon-twitter"></use>
+        </svg>
+      </li>
+      <li class="footer-icon">
+        <svg width="20px" height="20px">
+          <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+        </svg>
+      </li>
+      <li class="footer-icon">
+        <svg width="20px" height="20px">
+          <use href="./images/symbol-defs.svg#icon-facebook"></use>
+        </svg>
+      </li>
+    </ul>
+    </div>
+  </div>
+</footer>
   </body>
 </html>
