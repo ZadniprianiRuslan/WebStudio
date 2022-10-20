@@ -7,7 +7,7 @@ h6 {
   margin: 0px;
 }
 
-body{
+body {
   padding-top: 80px;
 }
 
@@ -100,6 +100,27 @@ header .container {
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
+}
+
+.card-headerlink::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms,
+    transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scaleX(0);
+}
+
+.card-headerlink:hover::after {
+  opacity: 1;
+  width: 100%;
+  transform: scaleX(1);
 }
 
 .card-headerlink:hover {
@@ -393,6 +414,7 @@ header .container {
   display: flex;
   align-items: center;
   fill: #afb1b8;
+  transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 70ms;
 }
 
 .team-icon:hover {
@@ -470,7 +492,7 @@ header .container {
 
 /* footer */
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -552,6 +574,7 @@ footer .container {
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 70ms;
 }
 
 .footer-icon:hover {
@@ -719,10 +742,10 @@ footer .container {
   align-items: center;
 }
 
-.symbol-close{
+.symbol-close {
   color: #000000;
 }
 
-.symbol-close:hover{
+.symbol-close:hover {
   fill: #2196f3;
 }
