@@ -1,0 +1,321 @@
+
+/* main */
+
+.card-body {
+    font-family: 'Roboto';
+  }
+  
+  /* секція-герой */
+  .hero-section {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Img.jpg');
+  }
+  
+  .hero-tittle {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $pure-white-color;
+    padding-right: 350px;
+    padding-left: 350px;
+  }
+  
+  .hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $pure-white-color;
+    background-color: $color-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 10px 24px;
+    border: none;
+  }
+  
+  /* секція "Чому ми?" */
+  
+  .features-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .features-item {
+    width: 270px;
+    margin-right: 30px;
+  }
+  
+  .features-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bgm-color;
+  }
+  
+  .antena1::before {
+    background-image: url('../images/antenna1.png');
+    background-size: 70px;
+  }
+  
+  .clock1::before {
+    background-image: url('../images/clock1.png');
+    background-size: 70px;
+  }
+  
+  .diagram1::before {
+    background-image: url('../images/diagram1.png');
+    background-size: 70px;
+  }
+  
+  .astronaut1::before {
+    background-image: url('../images/astronaut1.png');
+    background-size: 70px;
+  }
+  
+  .features-item:last-child {
+    margin-right: 0px;
+  }
+  
+  .features-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 10px;
+  }
+  
+  .features-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+  
+  .features-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-colour;
+  }
+  
+  /* Наша робота */
+  
+  .work-section .container {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+  
+  .work-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+  
+  .work-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .work-item {
+    position: relative;
+    width: 370px;
+    margin-left: 30px;
+  }
+  
+  .work-item:first-child {
+    margin-left: 0px;
+  }
+  
+  .work-text {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $pure-white-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+  }
+  
+  /* секція "Команда" */
+  
+  .team-section {
+    background-color: $bgm-color;
+  }
+  
+  .team-section .container {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+  
+  .team-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+  
+  .team-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .team-item {
+    width: 270px;
+    margin-left: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background-color: $pure-white-color;
+  }
+  
+  .team-item:first-child {
+    margin-left: 0px;
+  }
+  
+  .workername {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .worker-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $secondary-colour;
+    padding-bottom: 30px;
+  }
+  
+  .team-icons-list {
+    display: flex;
+    justify-content: center;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  
+  .team-icon {
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    fill: $third-color;
+    transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 70ms;
+  }
+  
+  .team-icon:hover {
+    fill: $pure-white-color;
+    background-color: $color-blue;
+  }
+  
+  .icon-link:hover {
+    fill: $pure-white-color;
+  }
+  
+  /* clients */
+  
+  .clients-section .container {
+    padding-top: 90px;
+    padding-bottom: 94px;
+  }
+  
+  .clients-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+  
+  .clients-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .client-icon {
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $third-color;
+    border-radius: 4px;
+    fill: $third-color;
+    transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 40ms;
+  }
+  
+  .client-icon:nth-child(1) {
+    padding: 20px 63px;
+  }
+  
+  .client-icon:nth-child(2) {
+    padding: 19px 65px;
+  }
+  
+  .client-icon:nth-child(3) {
+    padding: 24px 65px;
+  }
+  
+  .client-icon:nth-child(4) {
+    padding: 24px 45px;
+  }
+  
+  .client-icon:nth-child(5) {
+    padding: 22px 55px;
+  }
+  
+  .client-icon:nth-child(6) {
+    padding: 22px 41px;
+  }
+  
+  .client-icon:last-child {
+    margin-right: 0px;
+  }
+  
+  .client-icon:hover {
+    fill: $color-blue;
+    border-color: $color-blue;
+  }
