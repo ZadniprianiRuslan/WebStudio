@@ -26,7 +26,7 @@
     pointer-events: none;
   }
   
-  .mtext {
+  .modal__text {
     display: block;
     font-weight: 700;
     margin-top: 40px;
@@ -40,7 +40,7 @@
     color: $text-color;
   }
   
-  .input-text {
+  .modal__input-text {
     display: block;
     position: relative;
     text-align: left;
@@ -53,7 +53,7 @@
     color: $secondary-colour;
   }
   
-  .text-input {
+  .modal__text-input {
     display: block;
     margin-left: 40px;
     margin-bottom: 10px;
@@ -61,7 +61,7 @@
     height: 40px;
   }
   
-  .text-input4 {
+  .modal__text-input4 {
     display: block;
     margin-left: 40px;
     margin-bottom: 10px;
@@ -69,7 +69,7 @@
     height: 120px;
   }
   
-  .text-galochka {
+  .modal__text-galochka {
     display: block;
     font-weight: 400;
     font-size: 14px;
@@ -79,13 +79,13 @@
     margin-top: 20px;
   }
   
-  .galochka {
+  .modal__galochka {
     position: absolute;
     left: 52px;
     bottom: 127px;
   }
   
-  .modal-btn {
+  .modal__btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -100,17 +100,17 @@
     border: none;
   }
   
-  .modal-icon {
+  .modal__icon {
     position: absolute;
     top: 28px;
     left: 52px;
   }
   
-  .modal-blank-item {
+  .modal__blank-item {
     position: relative;
   }
   
-  .add-comment {
+  .modal__add-comment {
     position: absolute;
     top: 28px;
     left: 56px;
@@ -121,26 +121,26 @@
     color: rgba(117, 117, 117, 0.5);
   }
   
-  .rules-of-deal:hover {
+  .modal__rules-of-deal:hover {
     color: $color-blue;
     text-decoration: underline;
   }
   
-  .text-input:hover {
+  .modal__text-input:hover {
     border-color: $color-blue;
     border-radius: 4px;
   }
   
-  .text-input4:hover {
+  .modal__text-input4:hover {
     border-color: $color-blue;
     border-radius: 4px;
   }
   
-  .modal-icon:hover {
+  .modal__icon:hover {
     fill: $color-blue;
   }
   
-  .modal-btn-close {
+  .modal__btn-close {
     box-sizing: border-box;
     position: absolute;
     width: 30px;
@@ -150,16 +150,14 @@
     background: $pure-white-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    @extend %flex; 
   }
   
-  .symbol-close {
+  .modal__symbol-close {
     color: $logo-color;
   }
   
-  .symbol-close:hover {
+  .modal__symbol-close:hover {
     fill: $color-blue;
   }
   

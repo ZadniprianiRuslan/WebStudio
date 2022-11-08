@@ -8,7 +8,7 @@ header {
     z-index: 2;
   }
   
-  .navigation {
+  .nav {
     display: flex;
     justify-content: center;
     margin-right: auto;
@@ -19,7 +19,7 @@ header {
     align-items: center;
   }
   
-  .links {
+  .nav__links {
     display: flex;
     margin-left: 95px;
   }
@@ -33,12 +33,13 @@ header {
   }
   
   /* логотип в шапці сайта */
-  .card-logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  .nav__card-logo{
+    // font-family: 'Raleway';
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    @extend %logo-fonts;
     color: $logo-color;
     text-decoration: none;
     padding-top: 25px;
@@ -51,17 +52,17 @@ header {
   
   /* посилання в шапці сайта */
   
-  .nav-item {
+  .nav__item {
     margin-left: 55px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   
-  .nav-item:first-child {
+  .nav__item:first-child {
     margin-left: auto;
   }
   
-  .card-headerlink {
+  .nav__headerlink {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -74,7 +75,7 @@ header {
     position: relative;
   }
   
-  .card-headerlink::after {
+  .nav__headerlink::after {
     content: '';
     display: block;
     width: 0;
@@ -88,13 +89,13 @@ header {
     transform: scaleX(0);
   }
   
-  .card-headerlink:hover::after {
+  .nav__headerlink:hover::after {
     opacity: 1;
     width: 100%;
     transform: scaleX(1);
   }
   
-  .card-headerlink:hover {
+  .nav__headerlink:hover {
     color: $color-blue;
   }
   
@@ -102,17 +103,17 @@ header {
     display: flex;
   }
   
-  .contact-item {
+  .contact-list__item {
     display: flex;
     align-items: center;
   }
   
-  .contact-item:first-child {
+  .contact-list__item:first-child {
     margin-left: auto;
     margin-right: 50px;
   }
   
-  .contact-link {
+  .contact-list__link {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -126,16 +127,11 @@ header {
     align-items: center;
   }
   
-  .contact-link:hover {
+  .contact-list__link:hover {
     color: $color-blue;
   }
   
-  .envelope {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-  
-  .smartphone {
+  .contact-list__icon {
     margin-right: 10px;
     fill: currentColor;
   }

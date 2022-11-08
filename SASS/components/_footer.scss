@@ -7,19 +7,20 @@
   }
   
   /* логотип в підвалі сайта */
-  .card-footerlogo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  .footer__logo {
+    // font-family: 'Raleway';
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    @extend %logo-fonts;
     color: $pure-white-color;
     background-color: $bgfooter-color;
     text-decoration: none;
   }
   
   /* адреса */
-  .address {
+  .footer__address {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -33,7 +34,7 @@
   }
   
   /* посилання в підвалі сайта */
-  .footerlink {
+  .footer__link {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -51,7 +52,7 @@
     display: flex;
   }
   
-  .footer-nav-container2 {
+  .footer__container2 {
     margin-left: 70px;
     padding-top: 12px;
   }
@@ -71,25 +72,23 @@
     display: flex;
   }
   
-  .footer-icon {
+  .footer-icons-list__icon {
     margin-left: 10px;
     border-radius: 50%;
     fill: $pure-white-color;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    @extend %flex;
     background: rgba(255, 255, 255, 0.1);
     transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 70ms;
   }
   
-  .footer-icon:hover {
+  .footer-icons-list__icon:hover {
     background-color: $color-blue;
   }
   
-  .footer-icon:nth-child(1) {
+  .footer-icons-list__icon:nth-child(1) {
     margin-left: 0px;
   }
   
@@ -98,7 +97,7 @@
     position: relative;
   }
   
-  .footer-coment-elements{
+  .footer-coment__elements{
     display: flex;
     margin-left: -40px;
   }
@@ -130,7 +129,7 @@
     margin-left: 12px;
   }
   
-  .text-input-footer{
+  .footer-coment__text-input{
     display: block;
     margin-left: 40px;
     width: 358px;
