@@ -11,14 +11,6 @@
           align-items: center;
 }
 
-.footer__logo, .nav__card-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
 h1,
 h2,
 h3,
@@ -60,46 +52,58 @@ header {
   z-index: 2;
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: auto;
+  }
 }
 
-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .nav__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 95px;
+  display: none;
 }
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 95px;
+  }
 }
 
 /* логотип в шапці сайта */
 .nav__card-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .nav__card-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .color-text {
@@ -107,102 +111,154 @@ header .container {
 }
 
 /* посилання в шапці сайта */
-.nav__item {
-  margin-left: 55px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .nav__item {
+    margin-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    margin-left: 52px;
+  }
 }
 
-.nav__item:first-child {
-  margin-left: auto;
+@media screen and (min-width: 480px) {
+  .nav__item:first-child {
+    margin-left: auto;
+  }
 }
 
-.nav__headerlink {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: relative;
+@media screen and (min-width: 768px) {
+  .nav__headerlink {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
 }
 
-.nav__headerlink::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 5px;
-  background-color: #2196f3;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  -webkit-transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+@media screen and (min-width: 768px) {
+  .nav__headerlink::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: #2196f3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 600ms, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
 }
 
-.nav__headerlink:hover::after {
-  opacity: 1;
-  width: 100%;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+@media screen and (min-width: 768px) {
+  .nav__headerlink:hover::after {
+    opacity: 1;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
-.nav__headerlink:hover {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .nav__headerlink:hover {
+    color: #2196f3;
+  }
 }
 
 .contact-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: 96px;
+  }
 }
 
-.contact-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .contact-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item {
+    margin-bottom: auto;
+  }
 }
 
-.contact-list__item:first-child {
-  margin-left: auto;
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contact-list__item:first-child {
+    margin-left: auto;
+    margin-right: 59px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item:first-child {
+    margin-right: 50px;
+  }
 }
 
-.contact-list__link {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #757575;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .contact-list__link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.contact-list__link:hover {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .contact-list__link:hover {
+    color: #2196f3;
+  }
 }
 
-.contact-list__icon {
-  margin-right: 10px;
-  fill: currentColor;
+@media screen and (min-width: 768px) {
+  .contact-list__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 /* main */
@@ -341,9 +397,20 @@ header .container {
 
 /* логотип в підвалі сайта */
 .footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2f303a;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 /* адреса */
