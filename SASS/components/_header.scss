@@ -1,68 +1,80 @@
-
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $pure-white-color;
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $pure-white-color;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     margin-right: auto;
   }
-  
-  header .container {
+}
+
+header .container {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
-  
-  .nav__links {
+}
+
+.nav__links {
+  display: none;
+
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 95px;
   }
-  
-  .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+/* логотип в шапці сайта */
+.nav__card-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $logo-color;
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.color-text {
+  color: $color-blue;
+}
+
+/* посилання в шапці сайта */
+
+.nav__item {
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 52px;
+  }
+}
+
+.nav__item:first-child {
+  @media screen and (min-width: 480px) {
     margin-left: auto;
-    margin-right: auto;
   }
-  
-  /* логотип в шапці сайта */
-  .nav__card-logo{
-    // font-family: 'Raleway';
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
-    @extend %logo-fonts;
-    color: $logo-color;
-    text-decoration: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  
-  .color-text {
-    color: $color-blue;
-  }
-  
-  /* посилання в шапці сайта */
-  
-  .nav__item {
-    margin-left: 55px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .nav__item:first-child {
-    margin-left: auto;
-  }
-  
-  .nav__headerlink {
+}
+
+.nav__headerlink {
+  @media screen and (min-width: 768px) {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -74,8 +86,10 @@ header {
     padding-bottom: 30px;
     position: relative;
   }
-  
-  .nav__headerlink::after {
+}
+
+.nav__headerlink::after {
+  @media screen and (min-width: 768px) {
     content: '';
     display: block;
     width: 0;
@@ -88,50 +102,85 @@ header {
       transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform: scaleX(0);
   }
-  
-  .nav__headerlink:hover::after {
+}
+
+.nav__headerlink:hover::after {
+  @media screen and (min-width: 768px) {
     opacity: 1;
     width: 100%;
     transform: scaleX(1);
   }
-  
-  .nav__headerlink:hover {
+}
+
+.nav__headerlink:hover {
+  @media screen and (min-width: 768px) {
     color: $color-blue;
   }
-  
-  .contact-list {
+}
+
+.contact-list {
+  display: none;
+
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap-reverse;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: 96px;
   }
-  
-  .contact-list__item {
+}
+
+.contact-list__item {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
-  
-  .contact-list__item:first-child {
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: auto;
+  }
+}
+
+.contact-list__item:first-child {
+  @media screen and (min-width: 768px) {
     margin-left: auto;
+    margin-right: 59px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
-  
-  .contact-list__link {
+}
+
+.contact-list__link {
+  @media screen and (min-width: 768px) {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
     color: $secondary-colour;
-    display: flex;
     align-items: center;
   }
-  
-  .contact-list__link:hover {
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contact-list__link:hover {
+  @media screen and (min-width: 768px) {
     color: $color-blue;
   }
-  
-  .contact-list__icon {
+}
+
+.contact-list__icon {
+  @media screen and (min-width: 768px) {
     margin-right: 10px;
     fill: currentColor;
   }
+}

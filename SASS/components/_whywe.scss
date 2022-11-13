@@ -1,77 +1,100 @@
+/* секція "Чому ми?" */
 
-  /* секція "Чому ми?" */
-  
-  .features-list {
+.features-list {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap-reverse;
     display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
-  .features-list__item {
-    width: 270px;
+}
+
+.features-list__item {
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
     margin-right: 30px;
   }
-  
-  .features-list__item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $bgm-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
-  
-  .antena1::before {
-    background-image: url('../images/antenna1.png');
-    background-size: 70px;
-  }
-  
-  .clock1::before {
-    background-image: url('../images/clock1.png');
-    background-size: 70px;
-  }
-  
-  .diagram1::before {
-    background-image: url('../images/diagram1.png');
-    background-size: 70px;
-  }
-  
-  .astronaut1::before {
-    background-image: url('../images/astronaut1.png');
-    background-size: 70px;
-  }
-  
-  .features-list__item:last-child {
+}
+
+.features-list__item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bgm-color;
+}
+
+.antena1::before {
+  background-image: url('../images/antenna1.png');
+  background-size: 70px;
+}
+
+.clock1::before {
+  background-image: url('../images/clock1.png');
+  background-size: 70px;
+}
+
+.diagram1::before {
+  background-image: url('../images/diagram1.png');
+  background-size: 70px;
+}
+
+.astronaut1::before {
+  background-image: url('../images/astronaut1.png');
+  background-size: 70px;
+}
+
+.features-list__item:last-child {
+  @media screen and (min-width: 768px) {
     margin-right: 0px;
   }
-  
-  .features-list__name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $text-color;
-    margin-bottom: 10px;
-  }
-  
-  .why-we__tittle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $text-color;
-  }
-  
-  .features-list__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $secondary-colour;
-  }
+}
+
+.features-list__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color;
+  margin-bottom: 10px;
+}
+
+.why-we__tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.features-list__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-colour;
+}
