@@ -26,6 +26,11 @@
           <a class="nav__card-logo" href="/"
             ><span class="color-text">Web</span>Studio</a
           >
+          <button class="mobile__btn-open" data-mobile-open>
+            <svg width="40px" height="40px">
+              <use href="./images/sprite-mobile.svg#menu"></use>
+            </svg>
+          </button>
           <ul class="nav__links">
             <li class="nav__item">
               <a class="nav__headerlink" href="/">Студія</a>
@@ -384,7 +389,7 @@
     </main>
 
     <!--footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__container1">
           <a class="footer__logo" href="/"
@@ -393,10 +398,18 @@
           <address>
             <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
           </address>
-          <a class="footer__link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <ul>
+            <li>
+              <a class="footer__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
 
         <div class="footer__container2">
@@ -438,7 +451,56 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <div class="backdrop is-hidden" data-mobile>
+      <div class="mobile-modal">
+        <button class="mobile__btn-close" data-mobile-close>
+          <svg width="40px" height="40px">
+            <use href="./images/sprite-mobile.svg#cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-links">
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="/">Студія</a>
+          </li>
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="./contacts.html">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-infolist">
+          <li class="mobile-infolist__item">
+            <a class="mobile-infolist__link1" href="mailto:info@devstudio.com"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-infolist__item">
+            <a class="mobile-infolist__link2" href="tel:+380961111111"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-contactlist">
+          <li class="mobile-contactlist__item">
+            <a class="mobile-contactlist__link" href="instagram">Instagram</a>
+          </li>
+          <li class="mobile-contactlist__item">
+            <a class="mobile-contactlist__link" href="twitter">Twitter</a>
+          </li>
+          <li class="mobile-contactlist__item">
+            <a class="mobile-contactlist__link" href="facebook">Facebook</a>
+          </li>
+          <li class="mobile-contactlist__item">
+            <a class="mobile-contactlist__link" href="linkedIn">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <script>
       const refs = {
@@ -459,6 +521,24 @@
       function logBackdropClick() {
         console.log('Це клік в бекдроп');
       }
+    </script>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-mobile-open]'),
+          closeModalBtn: document.querySelector('[data-mobile-close]'),
+          modal: document.querySelector('[data-mobile]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          document.body.classList.toggle('modal-open');
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
     </script>
   </body>
 </html>

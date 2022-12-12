@@ -3,17 +3,31 @@
 /* buttons */
 
 .portfolio-buttons .container {
-  padding-top: 95px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 95px;
+  }
 }
 
 .buttons-list {
   display: flex;
-  justify-content: center;
-  padding-bottom: 35px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    padding-bottom: 35px;
+  }
 }
 
 .buttons-list__item {
   margin-left: 8px;
+  margin-bottom: 15px;
 }
 
 .buttons-list__button {
@@ -39,7 +53,7 @@
 
 .images-list {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   padding-top: 35px;
   padding-bottom: 95px;
   margin: -15px;
@@ -69,6 +83,11 @@
   margin: 15px;
   box-sizing: border-box;
   background: $pure-white-color;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 }
 
 .image-overlay {
@@ -113,4 +132,8 @@
   color: $secondary-colour;
   padding-bottom: 20px;
   padding-left: 24px;
+}
+
+.image-overlay img {
+  width: 100%;
 }

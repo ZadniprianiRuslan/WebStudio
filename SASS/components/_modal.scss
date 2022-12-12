@@ -1,163 +1,195 @@
 /* modal */
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.modal {
+  position: fixed;
+  background-color: $pure-white-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609;
   }
-  
-  .modal {
-    position: fixed;
-    background-color: $pure-white-color;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 526px;
+    height: 521;
   }
-  
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__text {
+  display: block;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.modal__input-text {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-colour;
+}
+
+.modal__text-input {
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  height: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
   }
-  
-  .modal__text {
-    display: block;
-    font-weight: 700;
-    margin-top: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 12px;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $text-color;
-  }
-  
-  .modal__input-text {
-    display: block;
-    position: relative;
-    text-align: left;
-    padding-left: 40px;
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $secondary-colour;
-  }
-  
-  .modal__text-input {
-    display: block;
-    margin-left: 40px;
-    margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
     width: 448px;
-    height: 40px;
   }
-  
-  .modal__text-input4 {
-    display: block;
-    margin-left: 40px;
-    margin-bottom: 10px;
+}
+
+.modal__text-input4 {
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  height: 120px;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 448px;
-    height: 120px;
   }
-  
-  .modal__text-galochka {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $secondary-colour;
-    margin-top: 20px;
-  }
-  
-  .modal__galochka {
-    position: absolute;
-    left: 52px;
-    bottom: 127px;
-  }
-  
-  .modal__btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: $pure-white-color;
-    background-color: $color-blue;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-bottom: 41px;
-    padding: 10px 57px;
-    border: none;
-  }
-  
-  .modal__icon {
-    position: absolute;
-    top: 28px;
-    left: 52px;
-  }
-  
-  .modal__blank-item {
-    position: relative;
-  }
-  
-  .modal__add-comment {
-    position: absolute;
-    top: 28px;
-    left: 56px;
-    font-weight: 400;
+}
+
+.modal__text-galochka {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-colour;
+  margin-top: 20px;
+
+  @media screen and (min-width: 480px) {
     font-size: 12px;
     line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
   }
-  
-  .modal__rules-of-deal:hover {
-    color: $color-blue;
-    text-decoration: underline;
+}
+
+.modal__galochka {
+  position: absolute;
+  left: 52px;
+  bottom: 127px;
+
+  @media screen and (min-width: 480px) {
+    bottom: 122px;
   }
-  
-  .modal__text-input:hover {
-    border-color: $color-blue;
-    border-radius: 4px;
-  }
-  
-  .modal__text-input4:hover {
-    border-color: $color-blue;
-    border-radius: 4px;
-  }
-  
-  .modal__icon:hover {
-    fill: $color-blue;
-  }
-  
-  .modal__btn-close {
-    box-sizing: border-box;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 8px;
-    top: 2px;
-    background: $pure-white-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    @extend %flex; 
-  }
-  
-  .modal__symbol-close {
-    color: $logo-color;
-  }
-  
-  .modal__symbol-close:hover {
-    fill: $color-blue;
-  }
-  
+}
+
+.modal__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $pure-white-color;
+  background-color: $color-blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 41px;
+  padding: 10px 57px;
+  border: none;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 28px;
+  left: 52px;
+}
+
+.modal__blank-item {
+  position: relative;
+}
+
+.modal__add-comment {
+  position: absolute;
+  top: 28px;
+  left: 56px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__rules-of-deal:hover {
+  color: $color-blue;
+  text-decoration: underline;
+}
+
+.modal__text-input:hover {
+  border-color: $color-blue;
+  border-radius: 4px;
+}
+
+.modal__text-input4:hover {
+  border-color: $color-blue;
+  border-radius: 4px;
+}
+
+.modal__icon:hover {
+  fill: $color-blue;
+}
+
+.modal__btn-close {
+  box-sizing: border-box;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 2px;
+  background: $pure-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  @extend %flex;
+}
+
+.modal__symbol-close {
+  color: $logo-color;
+}
+
+.modal__symbol-close:hover {
+  fill: $color-blue;
+}

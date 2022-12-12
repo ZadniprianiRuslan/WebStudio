@@ -8,13 +8,10 @@
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/Img.jpg');
-
-  @media screen and (min-width: 480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-right: 60px;
-    padding-left: 60px;
-  }
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-right: 60px;
+  padding-left: 60px;
 
   @media screen and (min-width: 768px) {
     padding-right: 204px;
@@ -30,9 +27,10 @@
 }
 
 .hero-section__title {
+  font-family: 'Roboto';
   font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
+  font-size: 44px;
+  line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;

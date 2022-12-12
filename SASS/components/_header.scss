@@ -5,6 +5,18 @@ header {
   background-color: $pure-white-color;
   width: 100%;
   z-index: 2;
+  border-bottom: 1px solid #ececec;
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}
+
+.mobile-btn {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav {
@@ -16,10 +28,7 @@ header {
 }
 
 header .container {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
 }
 
 .nav__links {
@@ -28,6 +37,7 @@ header .container {
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 95px;
+    padding-top: 32px;
   }
 }
 
@@ -40,8 +50,12 @@ header .container {
   letter-spacing: 0.03em;
   color: $logo-color;
   text-decoration: none;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: block;
+  padding-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
@@ -58,8 +72,6 @@ header .container {
 .nav__item {
   @media screen and (min-width: 768px) {
     margin-left: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 
   @media screen and (min-width: 768px) {
@@ -82,9 +94,8 @@ header .container {
     letter-spacing: 0.02em;
     color: $text-color;
     text-decoration: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
     position: relative;
+    padding-bottom: 28px;
   }
 }
 
@@ -120,13 +131,16 @@ header .container {
 
 .contact-list {
   display: none;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap-reverse;
+    display: block;
     padding-top: 21px;
-    padding-bottom: 21px;
-    margin-left: 96px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 32px;
   }
 }
 
@@ -143,11 +157,6 @@ header .container {
 }
 
 .contact-list__item:first-child {
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: 59px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
@@ -167,8 +176,6 @@ header .container {
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
