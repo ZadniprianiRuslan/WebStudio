@@ -4,9 +4,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $bgfooter-color;
-
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .footer .container {
@@ -61,10 +58,6 @@
 
 .footer__container1 {
   text-align: center;
-
-  @media screen and (min-width: 768px) {
-    // padding-right: 76px;
-  }
 
   @media screen and (min-width: 1200px) {
     text-align: left;
@@ -146,7 +139,6 @@ footer .container {
 
 .footer-coment {
   position: relative;
-  // align-items: center;
 
   @media screen and (min-width: 1200px) {
     margin-left: 80px;
@@ -204,10 +196,6 @@ footer .container {
 
   @media screen and (min-width: 480px) {
     margin-top: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-   
   }
 
   @media screen and (min-width: 1200px) {
