@@ -87,37 +87,42 @@
             <a class="modal__text">Залиште свої дані, ми Вам зателефонуємо</a>
             <ul>
               <li class="modal__blank-item">
-                <label for="name" class="modal__input-text"
-                  >Ім'я
-                  <svg class="modal__icon" width="18px" height="18px">
-                    <use
-                      href="./images/symbol-defs4.svg#icon-person-black"
-                    ></use>
-                  </svg>
-                </label>
-                <input id="name" class="modal__text-input" type="text" />
+                <label for="name" class="modal__input-text">Ім'я </label>
+                <input
+                  id="name"
+                  class="modal__text-input"
+                  type="text"
+                  required
+                />
+                <svg class="modal__icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs4.svg#icon-person-black"></use>
+                </svg>
               </li>
 
               <li class="modal__blank-item">
-                <label for="phone" class="modal__input-text"
-                  >Телефон
-                  <svg class="modal__icon" width="18px" height="18px">
-                    <use href="./images/symbol-defs4.svg#icon-Vector"></use>
-                  </svg>
-                </label>
-                <input id="phone" class="modal__text-input" type="text" />
+                <label for="phone" class="modal__input-text">Телефон </label>
+                <input
+                  id="phone"
+                  class="modal__text-input"
+                  type="text"
+                  required
+                />
+                <svg class="modal__icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs4.svg#icon-Vector"></use>
+                </svg>
               </li>
 
               <li class="modal__blank-item">
-                <label for="email" class="modal__input-text"
-                  >Пошта
-                  <svg class="modal__icon" width="18px" height="18px">
-                    <use
-                      href="./images/symbol-defs4.svg#icon-email-black"
-                    ></use>
-                  </svg>
-                </label>
-                <input id="email" class="modal__text-input" type="text" />
+                <label for="email" class="modal__input-text">Пошта </label>
+                <input
+                  id="email"
+                  class="modal__text-input"
+                  type="text"
+                  required
+                />
+                <svg class="modal__icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs4.svg#icon-email-black"></use>
+                </svg>
               </li>
 
               <li class="modal__blank-item">
@@ -125,13 +130,20 @@
                   >Коментарі
                   <a class="modal__add-comment">Введіть текст</a>
                 </label>
-                <input id="comments" class="modal__text-input4" type="text" />
+                <input
+                  id="comments"
+                  class="modal__text-input4"
+                  type="text"
+                  required
+                />
               </li>
             </ul>
             <input class="modal__galochka" type="checkbox" />
             <a class="modal__text-galochka"
               >Погоджуюсь з розсилкою і приймаю
-              <span class="modal__rules-of-deal">Умови договору</span></a
+              <span class="modal__rules-of-deal" href="/"
+                >Умови договору</span
+              ></a
             >
 
             <button class="modal__btn" type="submit">Надіслати</button>

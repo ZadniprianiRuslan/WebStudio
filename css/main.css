@@ -744,6 +744,7 @@ header .container {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+
 @media screen and (min-width: 768px) {
   .footer .container {
     display: -webkit-box;
@@ -1123,11 +1124,16 @@ header .container {
 
 .modal__galochka {
   position: absolute;
-  left: 52px;
-  bottom: 127px;
 }
 @media screen and (min-width: 480px) {
   .modal__galochka {
+    bottom: 122px;
+    left: 52px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__galochka {
+    left: 87px;
     bottom: 122px;
   }
 }
@@ -1184,7 +1190,7 @@ header .container {
   border-radius: 4px;
 }
 
-.modal__icon:hover {
+.modal__text-input:hover + .modal__icon {
   fill: #2196f3;
 }
 

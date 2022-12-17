@@ -454,6 +454,7 @@ header .container {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+
 @media screen and (min-width: 768px) {
   .footer .container {
     display: -webkit-box;
