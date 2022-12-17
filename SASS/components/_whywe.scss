@@ -5,7 +5,7 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     display: flex;
   }
 
@@ -108,4 +108,3 @@
   letter-spacing: 0.03em;
   color: $secondary-colour;
 }
-
