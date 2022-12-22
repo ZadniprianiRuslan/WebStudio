@@ -331,6 +331,12 @@ header .container {
   margin-bottom: 15px;
 }
 
+.buttons-list__item:hover {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .buttons-list__button {
   font-family: "Roboto";
   font-weight: 500;
@@ -662,12 +668,19 @@ header .container {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
+  fill: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 28px;
   border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (min-width: 480px) {
   .subscribe-button {
@@ -702,6 +715,10 @@ header .container {
     margin-left: 40px;
     width: 358px;
   }
+}
+
+.footer-coment__text-input:hover {
+  border-color: #2196f3;
 }
 
 .add-comment-footer {
